@@ -5,7 +5,7 @@ import ProjectList from './components/ProjectList';
 import './App.css';
 
 function App() {
-  // Start with empty portfolio - agency adds their own projects
+  //   portfolio
   const [projects, setProjects] = useState([]);
 
   const [searchTerm, setSearchTerm] = useState('');
