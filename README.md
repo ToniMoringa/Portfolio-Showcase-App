@@ -15,7 +15,7 @@ A modern, responsive Single Page Application (SPA) built with React for showcasi
 ## Tech Stack
 
 - React 18
-- CSS3 (Glassmorphism, Gradients, Animations)
+- CSS3 (Glassmorphism, Gradients, Animation)
 - Lucide React Icons
 - LocalStorage API
 
@@ -24,6 +24,8 @@ A modern, responsive Single Page Application (SPA) built with React for showcasi
 ### Prerequisites
 
 - Node.js (v16 or higher)
-- npm or yarn
+- npm
 
-### Steps
+## Live Demo
+
+View the deployed application: [https://portfolio-showcase-app-five.vercel.app/](https://portfolio-showcase-app-five.vercel.app/)
