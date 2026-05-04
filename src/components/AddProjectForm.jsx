@@ -1,53 +1,54 @@
 import { useState } from 'react';
 
-function AddProjectForm({ onAddProject }) {
+function AddProjectForm({ onAddProject, onClose }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [url, setUrl] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim() || !description.trim()) {
-      alert('Please fill at least Title and Description');
+      alert('Please fill in both title and description');
       return;
     }
     onAddProject({
       title: title.trim(),
       description: description.trim(),
-      url: url.trim() || '#',
     });
     setTitle('');
     setDescription('');
-    setUrl('');
+    onClose();
   };
 
   return (
-    <div className="form-card">
-      <h2>Add New Project</h2>
+    <div className="add-form-card">
       <form className="project-form" onSubmit={handleSubmit}>
+        <h3>Add a New Project</h3>
         <input
           type="text"
-          placeholder="Project title *"
+          placeholder="Project title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
         />
         <textarea
-          placeholder="Project description *"
+          placeholder="Project description"
           rows="3"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
-        <input
-          type="url"
-          placeholder="Project URL (optional)"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-        />
-        <button type="submit" className="glossy-btn">
-          + Add to Portfolio
-        </button>
+        <div className="form-buttons">
+          <button
+            type="button"
+            className="frutiger-aero-button medium"
+            onClick={onClose}
+          >
+            Cancel
+          </button>
+          <button type="submit" className="frutiger-aero-button medium">
+            Add Project
+          </button>
+        </div>
       </form>
     </div>
   );
