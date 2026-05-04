@@ -16,7 +16,7 @@ function StudioStory() {
     'Modern Design Systems',
   ];
 
-  // story 
+  // story
   const briefStory = `Aero Studio is a forward-thinking creative agency founded with a mission to transform digital experiences through innovative design and strategic thinking.`;
 
   const fullStory = `${briefStory} Since our establishment, we've partnered with businesses of all sizes to create compelling brand identities, intuitive user interfaces, and powerful digital solutions. Our team of designers, developers, and strategists work collaboratively to deliver projects that not only meet but exceed client expectations. We believe in the power of storytelling through design, and every project we undertake is a new chapter in our journey of creative excellence.`;

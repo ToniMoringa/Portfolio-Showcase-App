@@ -44,7 +44,7 @@ body {
       rgba(255, 255, 255, 0.1) 100%
     );
   backdrop-filter: blur(8px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   padding: 1.8rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow:
@@ -81,7 +81,7 @@ body {
 .search-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   padding: 0.3rem 0.3rem 0.3rem 1.2rem;
   margin-bottom: 1rem;
   display: flex;
@@ -133,7 +133,7 @@ body {
 .project-card {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   padding: 1.5rem;
   transition:
     transform 0.2s ease,
@@ -206,7 +206,7 @@ body {
   background:
     var(--bottom-glow), linear-gradient(to bottom, var(--bg-dark), var(--bg));
   border: 1px solid var(--bg);
-  border-radius: 16px; /* all buttons 16px */
+  border-radius: 16px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   color: var(--fg);
   font-family:
@@ -223,7 +223,7 @@ body {
   outline: none;
 }
 
-/* Top highlight effect – also 16px */
+/* Top highlight effect */
 .frutiger-aero-button::after {
   content: '';
   position: absolute;
@@ -236,12 +236,12 @@ body {
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0.1)
   );
-  border-radius: 16px; /* match button */
+  border-radius: 16px;
   transition: background 400ms ease;
   pointer-events: none;
 }
 
-/* Hover & active states (unchanged) */
+/* Hover & active states */
 .frutiger-aero-button:hover,
 .frutiger-aero-button:focus {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
@@ -267,7 +267,7 @@ body {
   font-size: 1rem;
 }
 
-/* Card link – inherits button style */
+/* Card link */
 .card-link {
   display: inline-block;
   margin-top: 0.5rem;
@@ -303,7 +303,7 @@ body {
 .add-form-card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   padding: 1.8rem;
   max-width: 600px;
   margin: 0 auto;
@@ -318,13 +318,13 @@ body {
   font-weight: 700;
 }
 
-/* Form inputs – also 16px for consistency, but keep pill shape optional */
+/* Form inputs */
 .project-form input,
 .project-form textarea {
   width: 100%;
   background: rgba(240, 249, 255, 0.9);
   border: 1px solid #7ab3c8;
-  border-radius: 16px; /* changed from 60px, now matches containers */
+  border-radius: 16px;
   padding: 0.8rem 1.2rem;
   font-size: 0.95rem;
   font-family: 'Lucida Grande', sans-serif;
@@ -333,7 +333,7 @@ body {
 }
 
 .project-form textarea {
-  border-radius: 16px; /* also 16px */
+  border-radius: 16px;
   resize: vertical;
 }
 
@@ -342,8 +342,6 @@ body {
   gap: 1rem;
   justify-content: flex-end;
 }
-
-/* Cancel button uses .frutiger-aero-button, so no separate rule */
 
 /* ========== CASE STUDY MODAL ========== */
 .modal-overlay {
@@ -363,7 +361,7 @@ body {
 .modal-content {
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(16px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   width: 90%;
   max-width: 550px;
   max-height: 80vh;
@@ -416,7 +414,7 @@ body {
   padding: 3rem;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(4px);
-  border-radius: 16px; /* changed from 10px */
+  border-radius: 16px;
   border: 2px dashed rgba(44, 125, 160, 0.4);
 }
 
